@@ -1,0 +1,63 @@
+joints:
+  names: [lf_haa_joint, lf_hfe_joint, lf_kfe_joint, rf_haa_joint, rf_hfe_joint, rf_kfe_joint,
+    lh_haa_joint, lh_hfe_joint, lh_kfe_joint, rh_haa_joint, rh_hfe_joint, rh_kfe_joint]
+  lf_haa_joint:
+    position: [-0.2367129123212569]
+    velocity: [-0.003292660851833878]
+    acceleration: [0.0]
+    effort: [13.349903524987798]
+  lf_hfe_joint:
+    position: [0.7605724210761995]
+    velocity: [0.2117399092515468]
+    acceleration: [0.0]
+    effort: [-11.804040656569724]
+  lf_kfe_joint:
+    position: [-1.5355726099928166]
+    velocity: [-0.018785968408508658]
+    acceleration: [0.0]
+    effort: [-101.48777578513466]
+  rf_haa_joint:
+    position: [0.23669469911566754]
+    velocity: [-0.007690452447456194]
+    acceleration: [0.0]
+    effort: [-13.229144468641275]
+  rf_hfe_joint:
+    position: [0.7611532662822533]
+    velocity: [0.21084329147111786]
+    acceleration: [0.0]
+    effort: [-12.143581602397736]
+  rf_kfe_joint:
+    position: [-1.5351156165221227]
+    velocity: [-0.00909398986065818]
+    acceleration: [0.0]
+    effort: [-101.85889165302953]
+  lh_haa_joint:
+    position: [-0.18151381970247604]
+    velocity: [-0.014244066374218071]
+    acceleration: [0.0]
+    effort: [-0.3268250271251847]
+  lh_hfe_joint:
+    position: [-0.8022511850428808]
+    velocity: [0.24856086100949115]
+    acceleration: [0.0]
+    effort: [-142.52314207586434]
+  lh_kfe_joint:
+    position: [1.54210814375545]
+    velocity: [-0.10765961665763751]
+    acceleration: [0.0]
+    effort: [91.28072355198854]
+  rh_haa_joint:
+    position: [0.18084409941356938]
+    velocity: [0.011045761375125264]
+    acceleration: [0.0]
+    effort: [-13.229144468641275]
+  rh_hfe_joint:
+    position: [-0.8021876136715055]
+    velocity: [0.2549316574605196]
+    acceleration: [0.0]
+    effort: [-142.62499286319985]
+  rh_kfe_joint:
+    position: [1.5415371926875059]
+    velocity: [-0.11259481695445772]
+    acceleration: [0.0]
+    effort: [91.67264619572322]
