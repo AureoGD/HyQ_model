@@ -80,7 +80,7 @@ function obj = odesim(file, varargin)
     try
         clear matode
     end
-    opengl neverselect
+    %opengl neverselect
 
     matode('init', file, varargin{:});
 
@@ -95,7 +95,7 @@ function obj = odesim(file, varargin)
 
     function close()
         matode('fini');
-        clear matode;
+        clearvars;
     end
     function s = sensor(path)
         if nargin < 1
