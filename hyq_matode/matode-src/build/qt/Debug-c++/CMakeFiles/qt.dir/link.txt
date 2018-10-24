@@ -1,0 +1,2 @@
+/usr/bin/ar qc libqt.a  CMakeFiles/qt.dir/GLWidget.cpp.o CMakeFiles/qt.dir/moc_GLWidget.cxx.o
+/usr/bin/ranlib libqt.a

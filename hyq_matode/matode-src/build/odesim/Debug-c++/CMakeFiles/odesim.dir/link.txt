@@ -1,0 +1,2 @@
+/usr/bin/ar qc libodesim.a  CMakeFiles/odesim.dir/ODEBodies.cpp.o CMakeFiles/odesim.dir/ODECollisions.cpp.o CMakeFiles/odesim.dir/ODEGeoms.cpp.o CMakeFiles/odesim.dir/ODEJointMotors.cpp.o CMakeFiles/odesim.dir/ODEJoints.cpp.o CMakeFiles/odesim.dir/ODEObjects.cpp.o CMakeFiles/odesim.dir/ODESim.cpp.o CMakeFiles/odesim.dir/GenericODESim.cpp.o
+/usr/bin/ranlib libodesim.a

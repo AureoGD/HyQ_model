@@ -3,6 +3,7 @@
 
 %% Initialization
 sim = odesim('hyq.xml');                         % Load configuration
+
 sim.realtime();                                   % Slow down to realtime
 
 %% Define sensors and actuators

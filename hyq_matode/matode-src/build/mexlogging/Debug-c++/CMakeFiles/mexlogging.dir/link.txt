@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmexlogging.a  CMakeFiles/mexlogging.dir/MexLog2.cpp.o
+/usr/bin/ranlib libmexlogging.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsimvis.a  CMakeFiles/simvis.dir/SimVis.cpp.o CMakeFiles/simvis.dir/SimVisWidget.cpp.o
+/usr/bin/ranlib libsimvis.a

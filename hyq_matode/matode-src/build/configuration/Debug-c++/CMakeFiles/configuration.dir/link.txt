@@ -1,0 +1,2 @@
+/usr/bin/ar qc libconfiguration.a  CMakeFiles/configuration.dir/Configuration.cpp.o CMakeFiles/configuration.dir/XMLConfiguration.cpp.o
+/usr/bin/ranlib libconfiguration.a

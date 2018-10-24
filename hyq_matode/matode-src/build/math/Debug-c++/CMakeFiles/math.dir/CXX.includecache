@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwbertol/Downloads/matode-dev/dbl/platform/math/Statistics.cpp
+Statistics.h
+/home/dwbertol/Downloads/matode-dev/dbl/platform/math/Statistics.h
+math.h
+-
+float.h
+-
+algorithm
+-
+string.h
+-
+
+/home/dwbertol/Downloads/matode-dev/dbl/platform/math/Statistics.h
+sstream
+-
+
+/home/dwbertol/Downloads/matode-dev/dbl/platform/math/randomc.h
+math.h
+-
+assert.h
+-
+stdio.h
+-
+stdint.h
+-
+
+/home/dwbertol/Downloads/matode-dev/dbl/platform/math/ranrotb.cpp
+randomc.h
+/home/dwbertol/Downloads/matode-dev/dbl/platform/math/randomc.h
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+

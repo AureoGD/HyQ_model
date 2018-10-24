@@ -1,0 +1,96 @@
+<!-- Common -->
+
+<html><head>
+<style type="text/css">
+a {text-decoration: none}
+a {color: #0000CC}
+</style>
+
+<title>matode</title></head><body bgcolor=white>
+
+<font face="helvetica,arial">
+
+<table width=100% height=100%><td align="center" valign="center">
+<table width=1024 height=768 border=0 cellspacing=0 cellpadding=0 rows=3 columns=3>
+  <tr height=160 valign="top">
+    <td colspan=3><img src="images/wcaarls.jpg"></td>
+
+  </tr>
+  <tr>
+    <td width=140 align="center" valign="top">
+
+<table width=130 cellspacing=0 cellpadding=0>
+<tr><td><a href="index.html">Home</a></td></tr>
+<tr><td><a href="publications.html">Publications</a></td></tr>
+<tr><td><a href="software.html">Software</a></td></tr>
+<tr><td><a href="ndview.html">&#8226; ndView</a></td></tr>
+<tr><td><a href="fluofit.html">&#8226; fluofit</a></td></tr>
+<tr><td><a href="matode.html">&#8226; MatODE</a></td></tr>
+<tr><td><a href="pictures.html">Pictures</a></td></tr>
+<tr><td><a href="links.html">Links</a></td></tr>
+</table>
+
+    </td>
+    <td colspan=2 align="left" valign="top"><div style="height:448px;overflow:auto">
+
+<!-- Specific -->
+
+<b>MatODE</b>
+
+<p>MatODE is a Matlab interface to the Open Dynamics Engine (ODE) by Russell Smith. From the ODE <a href="http://www.ode.org/">website</a>:
+<blockquote>
+ODE is an open source, high performance library for simulating rigid body dynamics. It is fully featured, stable, mature and platform independent with an easy to use C/C++ API. It has advanced joint types and integrated collision detection with friction. ODE is useful for simulating vehicles, objects in virtual reality environments and virtual creatures. It is currently used in many computer games, 3D authoring tools and simulation tools.
+</blockquote>
+MatODE uses Matlab's oriented programming capabilities to make the interface as easy as possible. The main class is <tt>odesim</tt>, which provides global interaction with the simulator such as initialization, running a simulation step, and resetting to an initial condition. It also allows you to retrieve sensor and actuator indices, with which you can sense joint positions and drive motors. The bodies that constitute the robot and the joints that connect them are defined in an XML file loaded during initialization.
+
+<p><i>Example</i>
+<pre>
+<font color="green">%% Initialization</font>
+sim = odesim(<font color="#A020F0">'mountaincar.xml'</font>);                  <font color="green">% Load configuration</font>
+sim.realtime();                                   <font color="green">% Slow down to realtime</font>
+
+<font color="green">%% Define sensors and actuators</font>
+vel = sim.sensor(<font color="#A020F0">'robot.base.velocity.y'</font>);        <font color="green">% Define sensor</font>
+motor = sim.actuator(<font color="#A020F0">'robot.motorjoint1.torque'</font>); <font color="green">% Define actuator</font>
+actuators = sim.actuate();                        <font color="green">% Get actuation vector</font>
+
+<font color="green">%% Control loop</font>
+<font color="blue">for</font> t = 0:sim.step():6                            <font color="green">% Simulation loop (6s)</font>
+    sensors = sim.sense();                        <font color="green">% Measure sensor values</font>
+    <font color="blue">if</font> sensors(vel) > 0                           <font color="green">% Read sensor</font>
+        actuators(motor) = 0.5;                   <font color="green">% Set actuator</font>
+    <font color="blue">else</font>
+        actuators(motor) = -0.5;
+    <font color="blue">end</font>
+    sim.actuate(actuators);                       <font color="green">% Run simulation step</font>
+<font color="blue">end</font>
+
+<font color="green">%% Clean up</font>
+sim.close()                                       <font color="green">% Destroy simulation</font>
+</pre>
+
+<p><i>Screenshot</i>
+<p>
+<img src="images/matode.png">
+
+<p><i>Downloads</i>
+<p><a href="files/matode-0.1.zip">matode 0.1</a>, for Linux and Windows (32-bit)<br>
+
+<p><i>Authors</i>
+<p>
+MatODE was written by Wouter Caarls and Erik Schuitema. It uses <a href="http://muparser.sourceforge.net/">muParser</a>, <a href="http://www.ode.org/">ODE</a>, <a href="http://sourceware.org/pthreads-win32/">Pthreads-w32</a>, <a href="http://qt.nokia.com/">Qt</a> and <a href="http://www.grinninglizard.com/tinyxml/">TinyXML</a>. It is released under the GPL license, version 2. For source code, please contact the authors.
+
+<!-- Common -->
+
+    </div></td>
+
+  </tr>
+  <tr height=160 valign="bottom">
+    <td colspan=3><img src="images/corner.jpg"></td>
+  </tr>
+</table>
+</td></table>
+
+</font>
+</body></html>
+

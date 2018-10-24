@@ -1,0 +1,7 @@
+Code tested with Matlab R2018a and Ubuntu 18.04
+
+Copy libmatode64.so to the \bin\glnxa64 matlab directory
+
+Include the \toolbox folder in the matlab path
+
+Thats it!
